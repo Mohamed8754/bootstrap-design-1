@@ -1,0 +1,232 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-heading h3 {
+  margin-top: 10px;
+  font-size: 35px;
+}
+.main-heading p::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* start-nav */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border: 1px solid white;
+  box-shadow: none;
+  font-size: 25px;
+}
+.main-btn {
+  padding: 0 30px;
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  border: none;
+}
+/* end-nav */
+/* strat-landing */
+.landing {
+  background-color: var(--dark-color);
+  height: calc(100vh - 70px);
+}
+/* end-landing */
+/* <!-- start-features --> */
+.feature .icons-holder {
+  height: 200px;
+}
+.feature .icons-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feature .icons-holder .icon {
+  color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feature .info h3 {
+  color: var(--yellow-color);
+}
+.feature .info p {
+  font-size: 0.9rem;
+}
+/* <!-- end-features --> */
+/* start-services */
+.service {
+  background-color: var(--section-color);
+}
+.service .shuffle .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+.service .shuffle p:not(:first-child):hover {
+  color: var(--red-color);
+  cursor: pointer;
+}
+.service .row .col-sm-6 img {
+  width: 100%;
+  position: relative;
+}
+.service .row .box {
+  position: relative;
+  overflow: hidden;
+}
+.service .row .box::after {
+  content: "Application";
+  position: absolute;
+  background-color: rgb(51 209 204 / 76%);
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: 1;
+  top: 4px;
+  left: -1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 19px;
+  transition: 0.5s;
+}
+.service .row .box:hover::after {
+  left: 4px;
+}
+/* end-services */
+/* start-about */
+.about .container .text {
+  max-width: 500px;
+}
+.about .container .box p {
+  font-size: 0.9rem;
+}
+.about .container .box img {
+  max-width: 100%;
+}
+/* end-about */
+/* start-team */
+.team {
+  background-color: var(--section-color);
+}
+.team .container .tittle h2 {
+  color: var(--yellow-color);
+}
+.team .container .box .imge img {
+  width: 100%;
+}
+.team .container .box .text h3 {
+  background-color: var(--green-color);
+}
+/* end-team */
+/* statrt-project */
+.project {
+  background-color: var(--dark-color);
+}
+/* end-project */
+
+/* start-blog */
+.blog .container .main-heading p::after {
+  width: 70%;
+}
+.blog .container .box {
+  border: 1px solid #eee;
+}
+.blog .container .box img {
+  width: 100%;
+}
+.blog .container .box .text {
+  padding: 10px;
+}
+.blog .container .box .text h2 {
+  font-size: 1.2rem;
+}
+/* end-blog */
+/* start-Subscribe  */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe .box input {
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: white;
+}
+.subscribe .box input::placeholder {
+  color: white;
+  font-size: 13px;
+}
+.subscribe .button a {
+  background-color: var(--dark-color);
+}
+/* end-Subscribe  */
+/* start-footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .text span {
+  color: var(--green-color);
+}
+
+.footer .icons svg {
+  font-size: 1rem;
+  margin-right: 0.6rem;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  cursor: pointer;
+}
+.footer .button a {
+  width: 100%;
+}
+.footer .icons svg:nth-child(2) {
+  background-color: blue;
+}
+.footer .icons svg:nth-child(3) {
+  background-color: red;
+}
+.footer .icons svg:nth-child(4) {
+  background-color: #0077b5;
+}
+/* end-footer */
